@@ -1,0 +1,12 @@
+{
+    "cognito" : {
+        "REGION" : "us-east-1",
+        "USER_POOL_ID" : "us-east-1_N90Wr6SiO",
+        "APP_CLIENT_ID" : "4l05pfpsmqpu0u04mgqrm8a3ai"
+    },
+    "configurationOptions" : {
+        "signInConfig": {
+            "isSignUpDisplayed": false
+        }
+    }
+}

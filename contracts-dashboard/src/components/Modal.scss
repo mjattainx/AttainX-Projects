@@ -1,0 +1,57 @@
+.modalheader {
+  padding: 0; 
+  background-color : rgb(3,120,124);
+  color: #ffffff;
+  display: flex;
+}
+
+.modalcontent {
+  margin: 35px;
+  font-size: 14px;
+  will-change: transform, opacity;
+}
+
+@keyframes modalFade {
+  from {transform: translateY(-50%);opacity: 0;}
+  to {transform: translateY(0);opacity: 1;}
+}
+
+.modal {
+  animation-name: modalFade;
+  animation-duration: 1s;
+}
+
+.modaltitle {
+  // display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+}
+
+.modalform {
+  margin-left: auto;
+  margin-right: auto;
+  width : 90%;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+}
+
+.fade-enter{
+  opacity: 0;
+}
+.fade-exit{
+  opacity: 1;
+}
+.fade-enter-active{
+  opacity: 1;
+}
+.fade-exit-active{
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+  // transition: opacity 500ms;
+  // transition: 1s ease-in-out;
+}
