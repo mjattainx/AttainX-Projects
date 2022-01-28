@@ -43,6 +43,7 @@ class App extends Component {
       
       // const user = await Auth.currentAuthenticatedUser()
       this.setState({authLevel : user.signInUserSession.idToken.payload["cognito:groups"][0]})
+      
     } catch(error) {
       if (error !== 'No current user') {
         console.log(error);
